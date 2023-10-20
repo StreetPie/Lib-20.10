@@ -1,11 +1,11 @@
-﻿using System.Xml.Linq;
+using System.Xml.Linq;
 using System.Text;
 using USQLCSLibrary;
 namespace LibraryConsoleApp
 {
     class Program
     {
-        static Book library = new Book();
+        static Library library = new Library();
 
         static void Main(string[] args)
         {
@@ -65,7 +65,7 @@ namespace LibraryConsoleApp
                 Quantity = quantity
             };
             
-            Library.AddBook(Book book);
+            library.AddBook(book);
             Console.WriteLine("Книга успешно добавлена.");
         }
 
@@ -78,13 +78,4 @@ namespace LibraryConsoleApp
             string groupNumber = Console.ReadLine();
         }
     }
-}
-
-
-
-       
-
-   
-
-
- 
+} 
